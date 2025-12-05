@@ -1,21 +1,17 @@
 #include<iostream>
-#include<unordered_set>
 using namespace std;
-int n,m,x,giao=0;
-unordered_set<int> un,um;
+int n,m,x,c=0,ans=0,ac[100006];
 int main(){
     ios_base::sync_with_stdio(0);cin.tie(0);
     cin>>n>>m;
-    while(n--){
+    for(int i=0;i<n;++i){
         cin>>x;
-        un.insert(x);
+        ac[x]++;
     }
-    while(m--){
+    for(int i=0;i<m;++i){
         cin>>x;
-        um.insert(x);
+        if(ac[x]+1==2)
+            ans++;
     }
-    for(auto x:un)
-        if(um.count(x))
-            giao++;
-    cout<<un.size()+um.size()-giao<<" "<<giao;
+    cout<<(n+m)-ans<<" "<<ans;
 }
