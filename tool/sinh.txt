@@ -1,1 +1,8 @@
-110000
+điểm số k (ban đầu = 0)
+n lượt, lượt thứ i:
+-thẻ đỏ ai
+-thẻ xanh 
+chọn 1 thẻ cập nhật điểm theo quy tắc
+-đỏ thì k-ai
+-xanh thì bi-k
+tìm điểm lớn nhất có thể sau n lượt
