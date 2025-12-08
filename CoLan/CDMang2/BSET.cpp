@@ -3,6 +3,8 @@ using namespace std;
 int n,m,x,c=0,ans=0,ac[100006];
 int main(){
     ios_base::sync_with_stdio(0);cin.tie(0);
+    freopen("BSET.INP","r",stdin);
+    freopen("BSET.OUT","w",stdout);
     cin>>n>>m;
     for(int i=0;i<n;++i){
         cin>>x;

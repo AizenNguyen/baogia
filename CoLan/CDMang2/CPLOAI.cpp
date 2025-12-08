@@ -7,6 +7,8 @@ vector<short> an;
 int n,x;
 int main(){
     ios_base::sync_with_stdio(0);cin.tie(0);
+    freopen("CPLOAI.INP","r",stdin);
+    freopen("CPLOAI.OUT","w",stdout);
     cin>>n;
     while(n--){
         cin>>x;

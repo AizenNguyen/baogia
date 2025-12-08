@@ -1,40 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define file "SOCHAN"
-#define TIME (1.0 * clock() / CLOCKS_PER_SEC)
-
 mt19937 rd(time(0));
-mt19937_64 rdl(time(0));
-
-long long Randll(long long l, long long r){
-    return l + rdl()%(r-l+1);
+mt19937 rdll(time(0));
+int Rand(int l,int r){
+    return l+rd()%(r-l+1);
 }
-int Rand(int l, int r){
-    return l + rd()%(r-l+1);
+long long Randll(long long l,long long r){
+    return l+rdll()%(r-l+1);
 }
-
 void sinh(){
-    ofstream cout(file".inp");  //
-
-    //int n = Rand(1,10000);
-    long long n = Randll(1,100000000);
-    cout<<n<<" ";
+    ofstream cout("sinh.inp");
+    long long a=Randll(1000000000,10000000000);
+    long long b=Randll(100000000000,1000000000000);
+    //long long n=Randll(1,100);
+    cout<<a<<'\n'<<b;
 }
-
-int32_t main(){
-
-    for(int i=1;i<=1000000;++i){
+int main(){
+    for(int i=1;i<=100000;++i){
         sinh();
-        system(file);  //
-        system(file"_trau");  //
-
-        if(system("fc " file".out " file".ans")){  //
-            cout<<"wrong";
+        system("trau");
+        system("thuat");
+        if(system("fc sinh.out sinh.ans")){
+            cout<<"Wrong";
             break;
         }
-        cout<<"correct\n";
+        cout<<"Correct\n";
     }
-    cerr<<"\ntime elapsed: "<<TIME <<"s.\n";
 }
-//file chính, inp, out, ans tên theo bài
-//file trâu tên theo bài + "_trau"

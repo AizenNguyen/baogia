@@ -5,6 +5,8 @@ short x,s;
 int n,c=0,an[1003];
 int main(){
     ios_base::sync_with_stdio(0);cin.tie(0);
+    freopen("CPAIR.INP","r",stdin);
+    freopen("CPAIR.OUT","w",stdout);
     cin>>n>>s;
     while(n--){
         cin>>x;
