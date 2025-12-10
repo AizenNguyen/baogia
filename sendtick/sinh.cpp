@@ -10,10 +10,14 @@ long long Randll(long long l,long long r){
 }
 void sinh(){
     ofstream cout("sinh.inp");
-    long long a=Randll(1000000000,10000000000);
-    long long b=Randll(100000000000,1000000000000);
+    int a=Rand(100000,100000);
+    cout<<a<<'\n';
     //long long n=Randll(1,100);
-    cout<<a<<'\n'<<b;
+    for(int i=0;i<a;++i)
+        if(i%2==0)
+            cout<<1<<" ";
+        else
+            cout<<1000000<<" ";
 }
 int main(){
     for(int i=1;i<=100000;++i){
